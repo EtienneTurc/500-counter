@@ -1,0 +1,29 @@
+{
+    "name": "Beta 500 counter",
+    "description": "Count the daily number of 500 in beta",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "*://*.aodap-staging.fr/*/500"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/favicon16x16.png",
+            "32": "/images/favicon32x32.png"
+        }
+    },
+    "icons": {
+        "16": "/images/favicon16x16.png",
+        "32": "/images/favicon32x32.png"
+    }
+}
